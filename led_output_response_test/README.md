@@ -35,10 +35,10 @@ Pin connections
 
 ## ポイント / Key insights
 - 割り込みではスイッチの読み取りとLED_RXのオン、オフに即座に反応できる  
-- loop処理で行うLED_TXのオン、オフは長いSerial.print()タスクで遅延する  
+- loop処理で行うLED_TXのオン、オフは長いSerial1.print()タスクで遅延する  
 - この例は時間的な制約があるタスクにおいて割り込みを使う重要性を示す  
 - Interrupts allow immediate response to switch read and LED_RX turn on/off  
-- Loop-based LED_TX turn on/off control can be delayed by long Serial.print() task  
+- Loop-based LED_TX turn on/off control can be delayed by long Serial1.print() task  
 - This example highlights the importance of using interrupts for time-critical tasks  
 
 ---
@@ -61,7 +61,8 @@ https://github.com/inteGN/GPT_basicfunction_R4
 ---
 
 ## 参考 / Reference
-動作中の動画 / video showing the behavior (Japanese caption only)
+動作中の動画 / video showing the behavior (Japanese caption only)  
+[![Arduino UNO R4 Switch to LED response test while Serialprint](https://img.youtube.com/vi/A85D8HMleZI/0.jpg)](https://www.youtube.com/watch?v=A85D8HMleZI)  
 
 ---
 

@@ -115,7 +115,7 @@ void loop() {
   digitalWrite(LED_TX, SWdetect_2);
 //UART送信    //hardware UART port write
   Serial1.print(charArray);
-//Time print every 1second
+//Time print every 1 second
   if (flag1sec > 0) {
     Serial.println(secCount++);
     flag1sec = 0;
