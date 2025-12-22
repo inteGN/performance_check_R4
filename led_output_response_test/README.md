@@ -46,7 +46,7 @@ Pin connections
 ## 必要な環境 / Requirements
 - Arduino IDE（最新版推奨） / Arduino IDE (latest recommended)  
 - Arduino UNO R4 MINIMA / Arduino UNO R4 MINIMA  
-- 各exampleに必要な部品 / Components required for each example  
+- 押しボタンスイッチと接続線 / a push button switch and electrical wire  
 
 ---
 

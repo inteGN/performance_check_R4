@@ -10,7 +10,7 @@
 1msec毎の割り込みを使い、D2につながれたスイッチのチャタリングを除去しLEDに出力する
  - ISRが呼ばれる毎にSWbuffer_2を左シフトし最下位ビットにスイッチの最新値を入れる
  - 0または1が何個連続したかをSWwindowと比較し（ここでは12個）、結果をSWdetect_2に入れる
- - 同じ割り込みISR内でSWdetect_2をLED_RXに出力する（回路構成上、スイッチがONのときLED_RXXが点灯する）
+ - 同じ割り込みISR内でSWdetect_2をLED_RXに出力する（回路構成上、スイッチがONのときLED_RXが点灯する）
  - loop()内でSWdetect_2をLED_TXに出力する（回路構成上、スイッチがONのときLED_TXが点灯する）
  - 同時に、loop()内でSerial.print()による1000byteのデータ送信を行う
  - setup()内であらかじめSWdetect_2とSWbuffer_2を初期化しておく
