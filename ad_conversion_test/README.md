@@ -22,7 +22,7 @@ GNDまたは+5Vに接続します（サンプルホールドコンデンサの�
 - オプションのコンデンサ：  
 サンプリング時間が短い場合、コンデンサがないと精度が悪くなる場合があります  
 A2/A5とGNDの間に0.01μFを加えると、精度の変動が改善されます  
-小さい値(例：1000nF=0.001μF)では、チャージが減少し顕著なオフセットが発生する可能性があります  
+小さい値(例：1nF=0.001μF)では、チャージが減少し顕著なオフセットが発生する可能性があります  
 - Precharge channels A1 and A4:  
 connect to GND or +5V (used to precharge the sample-hold capacitor).  
 - Measurement channels A2(High-precision channel) and A5(normal-precision channel):  
@@ -30,7 +30,7 @@ connect to midpoint of a 10kΩ/10kΩ divider between +5V and GND (theoretically 
 - Optional capacitor:  
 No connection of capacitor may be poor accuracy at the short sampling time.  
 Add 0.01µF between A2/A5 and GND to improve stability.  
-Small values (e.g., 1000nF = 0.001µF) may cause noticeable offset by its charge depletion  
+Small values (e.g., 1nF = 0.001µF) may cause noticeable offset by its charge depletion  
 
 ---
 
