@@ -13,8 +13,9 @@ It is intended for learners, hobbyists, and developers who want to explore the c
 ## 内容 / Contents
 - `led_output_response_test/` :  
 スイッチ入力からLED点灯までのレスポンステスト / Test for response from switch input to LED output  
+- `ad_conversion_test/` :  
+- サンプリング時間を変えてのAD変換テスト / Test for analog-digital conversion with sampling time sweep  
 - (preparing)
-
 ---
 
 ## 必要な環境 / Requirements
