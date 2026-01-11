@@ -14,8 +14,11 @@ It is intended for learners, hobbyists, and developers who want to explore the c
 - `led_output_response_test/` :  
 スイッチ入力からLED点灯までのレスポンステスト / Test for response from switch input to LED output  
 - `ad_conversion_test/` :  
-- サンプリング時間を変えてのAD変換テスト / Test for analog-digital conversion with sampling time sweep  
+サンプリング時間を変えてのAD変換テスト / Test for analog-digital conversion with sampling time sweep  
+- `port_racing_condition_test/` :  
+digitalWriteと割り込みISRでのアクセスとのポート競合テスト / Test for port racing condition of digitalWrite vs. ISR port access  
 - (preparing)  
+
 ---
 
 ## 必要な環境 / Requirements
@@ -36,5 +39,5 @@ https://github.com/inteGN/GPT_basicfunction_R4
 ---
 
 ## License
-Copyright (c) 2025 inteGN - MIT License  
+Copyright (c) 2025-2026 inteGN - MIT License  
 
