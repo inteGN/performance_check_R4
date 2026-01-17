@@ -17,6 +17,8 @@ It is intended for learners, hobbyists, and developers who want to explore the c
 サンプリング時間を変えてのAD変換テスト / Test for analog-digital conversion with sampling time sweep  
 - `port_racing_condition_test/` :  
 digitalWriteと割り込みISRでのアクセスとのポート競合テスト / Test for port racing condition of digitalWrite vs. ISR port access  
+- `timer_interrupt_latency_test/` :  
+FspTimerライブラリと自作ライブラリでの割り込みレスポンステスト / Test for interrupt latency of FspTimer library vs. custom library  
 - (preparing)  
 
 ---
