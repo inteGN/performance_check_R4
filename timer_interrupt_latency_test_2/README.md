@@ -46,12 +46,12 @@ Approximately 120 clocks (about 2.5μsec) until entering the user defined ISR ma
 
 **まとめ**
 - GPTの複数割り込みイベント（オーバーフロー、コンペアマッチA/B）はひとつのコールバック関数に集約されます。  
-- FspTimer.hはIRQManager.hを使用してIRQの設定を抽象化し、ほかのライブラリとの安全な共存を可能にします。  
+- FspTimer.hはIRQManager.hを使用して割り込みの設定を抽象化し、ほかのライブラリとの安全な共存を可能にします。  
 - 測定された割り込み待機時間は、オーバーフローとコンペアマッチの間に明確な差があることを示します。  
 
 **Conclusion**
 - Multiple GPT interrupt events (overflow, compare A/B) can be handled in a single callback.  
-- FspTimer.h abstracts IRQ setup through IRQManager.h, enabling safe coexistence with other libraries.  
+- FspTimer.h abstracts interrupt setup through IRQManager.h, enabling safe coexistence with other libraries.  
 - Measured interrupt latency shows clear differences between overflow and compare-match events.  
 
 ---
