@@ -59,7 +59,7 @@ void setup() {
   delay(2000);
   pinMode(LED_BUILTIN, OUTPUT);
   digitalWrite(LED_BUILTIN, LOW);
-//Setup GPT by Fsp library
+//Setup GPT by FspTimer library
   noInterrupts();
   timer.begin(TIMER_MODE_PWM, GPT_TIMER, 0, 48000000, 1000, TIMER_SOURCE_DIV_1, onCallback, nullptr);     //Set GPT0 period to 1 sec (1*48e6/1)
   timer.setup_overflow_irq(2, nullptr);
@@ -67,8 +67,8 @@ void setup() {
   timer.setup_capture_b_irq(4, nullptr);
   timer.open();
   timer.start();
-  timer.set_duty_cycle(481, CHANNEL_A);             //Trigger after 10 microsecond from overflow
-  timer.set_duty_cycle(961, CHANNEL_B);             //Trigger after 20 microsecond from overflow
+  timer.set_duty_cycle(481, CHANNEL_A);             //Trigger after 10 microseconds from overflow
+  timer.set_duty_cycle(961, CHANNEL_B);             //Trigger after 20 microseconds from overflow
   interrupts();
   check_nvic();                                     //Dump setting of interrupts
   delay(1100);                                      //wait for GTCCR buffer propagation
