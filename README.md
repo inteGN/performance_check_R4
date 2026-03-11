@@ -21,6 +21,8 @@ digitalWriteと割り込みISRでのアクセスとのポート競合テスト /
 FspTimerライブラリと自作ライブラリでの割り込みレスポンステスト / Test for interrupt latency of FspTimer library vs. custom library  
 - `timer_interrupt_latency_test_2/` :  
 FspTimerライブラリで設定したタイマー割り込みのレスポンステスト / Test for interrupt latency of timer interrupts configured by FspTimer library  
+- `agt_and_elc_setup_test/` :  
+AGTタイマーとそのイベントリンク機能の設定と動作テスト / Setting and test for AGT timer and event-link function  
 - (preparing)  
 
 ---
